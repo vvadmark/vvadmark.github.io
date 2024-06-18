@@ -12,6 +12,8 @@ body{
     color: #fff;
     min-height: 200vh;
 }
+
+/*-- navbar --*/
 header{
     width: 100%;
     height: 60vh;
@@ -33,15 +35,19 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 1.5s;
+    transition: 1s;
     padding: 40px 100px;
     z-index: 100000;
+    border-bottom: 2px solid #ff004f;
 }
 .logo{
     text-decoration: none;
     color: #fff;
     font-size: 40px;
-    transform: 0.5s;
+    transition: 0.5s;
+}
+.logo:hover{
+    font-size: 45px;
 }
 .logo span{
     text-decoration: none;
@@ -64,15 +70,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-
     transition: 0.5s;
-}
-nav.sticky{
-    padding: 20px 100px;
-    background: #fff;
-}
-nav.sticky ul li a, nav.sticky .logo{
-    color: #000;
 }
 nav ul li a::after{
     content: '';
@@ -87,23 +85,83 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav.sticky{
+    padding: 30px 100px;
+    /* background: #fff; */
+    background: #181818;
+}
+/* nav.sticky ul li a, nav.sticky .logo{
+    color: #000;
+} */
+
+/*-- multi-section items --*/
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+.btn.btn2{
+    display: inline-block;
+}
+.btn.btn2:hover{
+    transform: translateY(-2px);
+}
 
 /*-- home --*/
 #home{
+    margin-top: 10%;
     padding: 80px 0;
     color: #fff;
+}
+.home-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home-col-1{
+    flex-basis: 60%;
+    text-align: center;
 }
 .home-text{
     margin-top: 10%;
     font-size: 30px;
 }
 .home-text h1{
-    font-size: 60px;
+    font-size: 45px;
     margin-top: 20px;
 }
 .home-text h1 span{
     color: #ff004f;
 }
+
+.home-text-below {
+    width: 600px;
+    margin: 0 auto;
+}
+#home-text-left {
+    float: left;
+}
+#home-text-right
+{
+    float: right;
+}
+.home-col-2{
+    flex-basis: 35%;
+}
+.home-col-2 img{
+    width: 350px;
+    border-radius: 5px;
+}
+
 /*-- about --*/
 #about{
     padding: 80px 0;
@@ -188,7 +246,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-right: 10px;
     border-radius: 25px;
-    transition: background 0.5s, transform 0.5s;
+    transition: 0.5s;
 }
 .internships-row:hover{
     background: #303030;
@@ -264,21 +322,6 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s, transform 0.5s;
-}
-.btn:hover{
-    background: #ff004f;
-}
-
 /*-- contact --*/
 .contact-row {
     display: flex;
@@ -311,18 +354,12 @@ nav ul li a:hover::after{
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
-    transition: transform 0.5s, font-size 0.5s;
+    transition: 0.5s;
 }
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-2px);
     font-size: 40px;
-}
-.btn.btn2{
-    display: inline-block;
-}
-.btn.btn2:hover{
-    transform: translateY(-2px);
 }
 .contact-col-2{
     flex-basis: 60%;
