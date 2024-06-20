@@ -296,16 +296,16 @@ nav.sticky{
     overflow: hidden;
 }
 .work img{
-    max-width: 100%; 
-    max-height: 100%; 
+    width: 100%;
     height: 350px;
     border-radius: 10px;
     display: block;
+    transition: 0.5s;
 }
 .layer{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -318,6 +318,7 @@ nav.sticky{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: 0.5s;
 }
 .layer h2{
     font-weight: 500;
@@ -334,6 +335,13 @@ nav.sticky{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+.work:hover img{
+    transform: scale(1.05);
+}
+
+.work:hover .layer{
+    height: 100%;
 }
 
 /*-- contact --*/
@@ -358,7 +366,6 @@ nav.sticky{
     font-size: 25px;
     margin-right: 15px;
 }
-
 .social-icons{
     margin-top: 30px;
     align-content: inherit;
