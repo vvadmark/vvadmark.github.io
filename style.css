@@ -87,12 +87,8 @@ nav ul li a:hover::after{
 }
 nav.sticky{
     padding: 30px 100px;
-    /* background: #fff; */
     background: #181818;
 }
-/* nav.sticky ul li a, nav.sticky .logo{
-    color: #000;
-} */
 
 /*-- multi-section items --*/
 .btn{
@@ -191,6 +187,10 @@ nav.sticky{
 .about-col-2{
     flex-basis: 70%;
 }
+.about-col-2 p{
+    font-size: 20px;
+    color: #fff;
+}
 .sub-title{
     margin-bottom: 40px;
     font-size: 40px;
@@ -203,6 +203,62 @@ nav.sticky{
     font-weight: 600;
     color: #fff;
 }
+
+
+
+
+
+/*-------------------------------------
+        5.  Education
+--------------------------------------*/
+
+.education {
+    background:  #f9fbfd;
+    padding-top:  50px;
+}
+.education-horizontal-timeline {
+    padding: 80px 0;
+}
+
+.education-row {
+    padding: 0px 0 80px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.education-col{
+    min-width: 375px;
+    flex-basis: 45%;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    justify-content: left;
+}
+.education-col p, h1, h2, h3, h4, h5 {
+    padding: 4px 0;
+    max-width: 90%;
+}
+.timeline-horizontal-border {
+    display:  flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+.timeline-horizontal-border i {
+    font-size:  10px;
+    color: #ff004f;
+    margin-right:  5px;
+}
+span.single-timeline-horizontal {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: calc(100% - 20px);
+}
+span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+/*.timeline-horizontal-border*/
+
+
+
+
 
 /*-- internships --*/
 .internships-row{
