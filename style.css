@@ -226,8 +226,8 @@ nav.sticky{
     display: flex;
 }
 .education-col{
-    min-width: 375px;
-    flex-basis: 45%;
+    min-width: 360px;
+    flex-basis: 50%;
     display: block;
     width: fit-content;
     border-radius: 5px;
@@ -253,12 +253,6 @@ span.single-timeline-horizontal {
     height:  1px;
     width: calc(100% - 20px);
 }
-span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
-/*.timeline-horizontal-border*/
-
-
-
-
 
 /*-- internships --*/
 .internships-row{
