@@ -140,7 +140,7 @@ nav.sticky{
     color: #ff004f;
 }
 .home-text-below{
-    float: right;
+    float: center;
     justify-content: right;
     text-align: right;
     display: flex;
@@ -149,6 +149,11 @@ nav.sticky{
 }
 .home-text-below p {
     font-size: 15px;
+}
+.home-text-below p br {
+    content: "";
+    margin-bottom: 5px;
+    display: block;
 }
 .home-text-below p i {
     font-size: 40px;
